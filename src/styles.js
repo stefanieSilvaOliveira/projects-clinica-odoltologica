@@ -220,7 +220,7 @@ export const CardContainer = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
   gap: 2px; 
   margin-top: 80px;
-  margin-left: 200px;
+  margin-left: 120px;
   justify-content: center; 
 
   @media ${breakpoints.sm} {
@@ -228,8 +228,7 @@ export const CardContainer = styled.div`
     margin-left: 0;
     grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
     gap: 10px;
-    margin-top: 20px;
-     
+    margin-top: 20px;    
 }
          
 `;
@@ -315,8 +314,6 @@ export const Card = styled.div`
             font-size: 12px;
 
           }         
-  
-  
     }
 
     button{
@@ -341,27 +338,22 @@ export const Card = styled.div`
     margin: 10px auto;
     display: block;
     padding: 5px 5px;
-    background-color: #033495;
     border: none;
     border-radius: 6px;
     font-weight: 400;
     font-size: 14px;
     color: #fff;
-    transition: all 0.3s ease;
     cursor: pointer;
-  }
 
-}              
-  
-
-    &:hover{
-        background: #004E98;
+    background: #004E98;
     }
 
     &:active{
           transform: scale(0.95); 
           opacity: 0.5;
        }
+  }
+           
 `;
 
 export const Registerdiv = styled.div`
@@ -416,15 +408,13 @@ export const Registerdiv = styled.div`
         cursor: pointer;
 
         &:hover{
-        opacity: 0.8;
-
+            opacity: 0.8;
+        }
+        
     &:active{
           transform: scale(0.95); 
           opacity: 0.5;
        }
-
-    }
-
      }
           
 `;
