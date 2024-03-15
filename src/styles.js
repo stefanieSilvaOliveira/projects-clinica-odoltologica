@@ -15,8 +15,9 @@ export const Container = styled.div`
 
             @media ${breakpoints.sm} {
            
-                margin-left: -30px;
+                margin-left: 20px;
                 font-size: 20px;
+                width: 300px;
           }
 
           @media ${breakpoints.md} {
@@ -37,9 +38,9 @@ export const Container = styled.div`
             cursor: pointer;
 
             @media ${breakpoints.sm} {
-                 width: 300px;
+                 width: 100px;
                  font-size: 15px;
-                 margin-left: 20px;
+                 margin-left: -20px;
                  margin-top: 10px;
      }
      @media ${breakpoints.md} {
@@ -183,21 +184,20 @@ export const H1 = styled.h1`
        margin-top: 70px;
 
        @media ${breakpoints.sm} {
-           text-align: center;
-           font-weight: 400;
-           font-size: 30px;
-           margin-top: -120px;
-           margin-left: -70px;
-           color: #000;
-          }
+              font-size: 15px;
+              width: 400px;
+              height: 500px;       
+      }
+          
 
-          @media ${breakpoints.md} {
-                font-size: 35px;
-                margin-top: 120px;
-                margin-left: -150px;
- 
+          @media ${breakpoints.md}{
+                 font-size: 35px;
+                 margin-top: 120px;
+                 margin-left: -150px;   
           }
-        
+                     
+
+          
 `;
 
 
