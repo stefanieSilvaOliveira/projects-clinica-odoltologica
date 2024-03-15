@@ -21,7 +21,7 @@ export const Container = styled.div`
 
           @media ${breakpoints.md} {
                   text-align: center;
-                  margin-left: 120px;
+                  margin-left: 50px;
                   font-size: 30px;    
      }
         
@@ -43,7 +43,7 @@ export const Container = styled.div`
                  margin-top: 10px;
      }
      @media ${breakpoints.md} {
-                margin-left: 150px;
+                margin-left: 100px;
                 font-size: 20px;
                 width: 250px;
  
@@ -73,7 +73,7 @@ export const Header= styled.header`
         ul{
             list-style: none;
             display: flex;
-            margin-left: 60px;
+            margin-left: 20px;
 
             @media ${breakpoints.sm} {
                  margin-left: -30px;
@@ -83,7 +83,7 @@ export const Header= styled.header`
 
           @media ${breakpoints.md} {
                display: flex;
-               margin-left: 150px;
+               margin-left: 50px;
           }
         
            
@@ -194,7 +194,7 @@ export const H1 = styled.h1`
           @media ${breakpoints.md} {
                 font-size: 35px;
                 margin-top: 120px;
-                margin-left: -30px;
+                margin-left: -150px;
  
           }
         
@@ -320,7 +320,7 @@ export const Card = styled.div`
         border-radius: 25px;
         width: 100%;
         height: 300px;  
-        margin-left: 60px;  
+        margin-left: 10px;  
        }
   
 
@@ -376,7 +376,7 @@ export const Card = styled.div`
 
             @media ${breakpoints.sm} {
             
-                font-size: 18px;
+          font-size: 18px;
           }         
   
         }
