@@ -18,6 +18,12 @@ export const Container = styled.div`
                 margin-left: -30px;
                 font-size: 20px;
           }
+
+          @media ${breakpoints.md} {
+                  text-align: center;
+                  margin-left: 120px;
+                  font-size: 30px;    
+     }
         
           }
 
@@ -36,7 +42,15 @@ export const Container = styled.div`
                  margin-left: 20px;
                  margin-top: 10px;
      }
+     @media ${breakpoints.md} {
+                margin-left: 150px;
+                font-size: 20px;
+                width: 250px;
+ 
           }
+    
+    }
+
 `;
 
 export const Header= styled.header`
@@ -50,6 +64,10 @@ export const Header= styled.header`
            flex-direction: column;
            justify-content: center;
           }
+
+          @media ${breakpoints.md} {
+            flex-direction: column;  
+          }
         
     
         ul{
@@ -61,6 +79,11 @@ export const Header= styled.header`
                  margin-left: -30px;
                  display: flex;
                  justify-content: center;
+          }
+
+          @media ${breakpoints.md} {
+               display: flex;
+               margin-left: 150px;
           }
         
            
@@ -78,17 +101,19 @@ export const Header= styled.header`
             margin: 20px 20px 10px 20px;
             font-size: 13px;
           }
-        
 
-             &:active{
+          @media ${breakpoints.md} {
+          
+          margin: 20px 30px 10px 20px;
+          font-size: 20px;
+          
+          }
+         &:active{
          transform: scale(0.95); 
           opacity: 0.5;
        }
 
-    
-       }
-            
-`;
+       }`;
 
 export const ContainerItens = styled.div`
           width: 100%;
@@ -103,9 +128,13 @@ export const ContainerItens = styled.div`
            align-items: center;
            justify-content: center;
            width: 120%;
-           
           }
-        
+         
+          @media ${breakpoints.md} {
+                 width: 150%;
+                 height: 400px;
+    
+          }
           
           button{
             
@@ -125,6 +154,12 @@ export const ContainerItens = styled.div`
          
                 margin-right: 50px;
         
+          }
+
+          @media ${breakpoints.md} {
+                 margin-top: 50px;
+                 margin-left: 90px;
+ 
           }
         
         
@@ -155,6 +190,13 @@ export const H1 = styled.h1`
            margin-left: -70px;
            color: #000;
           }
+
+          @media ${breakpoints.md} {
+                font-size: 35px;
+                margin-top: 120px;
+                margin-left: -30px;
+ 
+          }
         
 `;
 
@@ -168,8 +210,12 @@ export const Logo = styled.image`
 
     @media ${breakpoints.sm} {
         display: none;
+   }        
    
-          }             
+   @media ${breakpoints.md} {
+          display: none;
+          
+          }
 `;
 
 export const Button = styled.button`
@@ -198,6 +244,10 @@ export const Button = styled.button`
        @media ${breakpoints.sm} {
            display: none;
           }
+
+          @media ${breakpoints.md} {
+                  display: none; 
+          }
         
        
 
@@ -209,6 +259,11 @@ export const Image = styled.img`
 
     @media ${breakpoints.sm} {
            display: none;
+          }
+
+          @media ${breakpoints.md} {
+           display: none;
+          
           }
         
                 
@@ -228,9 +283,17 @@ export const CardContainer = styled.div`
     margin-left: 0;
     grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
     gap: 10px;
-    margin-top: 20px;    
+    margin-top: 20px;        
 }
-         
+
+@media ${breakpoints.md} {
+            
+           margin-left: 0px;
+           grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
+           gap: 30px;
+           margin-top: 50px;
+
+          }
 `;
 
 export const Card = styled.div`
@@ -249,6 +312,16 @@ export const Card = styled.div`
         height: 300px;  
         margin-left: 60px;   
        }    
+
+       @media ${breakpoints.md} {
+           
+        position: relative;
+        background-color: #f9f9f9;
+        border-radius: 25px;
+        width: 100%;
+        height: 300px;  
+        margin-left: 60px;  
+       }
   
 
        &::before{
@@ -263,7 +336,13 @@ export const Card = styled.div`
             top: 0;
             left: 0;
             width: 100%;      
-          }         
+          } 
+          
+          @media ${breakpoints.md} {
+            top: 0;
+            left: 0;
+            width: 100%;      
+          } 
        }
 
         img{
@@ -282,9 +361,11 @@ export const Card = styled.div`
             @media ${breakpoints.sm} {
              margin: 20px auto 0; 
 
-          }         
-  
-
+          }     
+          
+          @media ${breakpoints.md} {
+            margin: 30px auto 0;    
+          } 
         }
 
         h3{
@@ -313,7 +394,17 @@ export const Card = styled.div`
             width: 200px;
             font-size: 12px;
 
-          }         
+          }     
+
+          
+        @media ${breakpoints.md} {
+            margin-left: 10px;
+            width: 200px;
+            font-size: 12px;
+
+          }     
+          
+         
     }
 
     button{
@@ -344,9 +435,23 @@ export const Card = styled.div`
     font-size: 14px;
     color: #fff;
     cursor: pointer;
-
     background: #004E98;
     }
+
+    
+    @media ${breakpoints.md} {
+      margin: 10px auto;
+    display: block;
+    padding: 5px 5px;
+    border: none;
+    border-radius: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    background: #004E98;
+
+          }     
 
     &:active{
           transform: scale(0.95); 

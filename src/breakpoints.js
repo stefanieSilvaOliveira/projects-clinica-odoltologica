@@ -1,6 +1,6 @@
 const size ={
     sm: '390px',
-    md: '600px',
+    md: '500px',
     bg: '1172px'
 }
 
