@@ -331,8 +331,8 @@ export const Card = styled.div`
         &::before{
         content: "";
         position: absolute;
-        width: 130px;
-        height: 50px;
+        width: 150px;
+        height: 100px;
         background: #033495;
         border-radius: 20px 20px 0 0;
        
@@ -410,8 +410,8 @@ export const Card = styled.div`
 
           
         @media ${breakpoints.md} {
-            margin-left: 10px;
-            width: 100px;
+            margin-left: 8px;
+            width: 130px;
             font-size: 12px;
 
           }     
