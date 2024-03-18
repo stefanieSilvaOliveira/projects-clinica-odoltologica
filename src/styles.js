@@ -271,7 +271,7 @@ export const CardContainer = styled.div`
            
     margin-left: 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 30px;
+    gap: 40px;
     margin-top: 20px;        
 }
 
@@ -302,14 +302,23 @@ export const Card = styled.div`
       } 
 
        @media ${breakpoints.sm} {
-        
-        width: 70%;
+       
+        width: 100%;
         height: auto;
-        margin-left: -50px;
-        margin-right: auto;
-        background:  #F9F9F9;
+        margin-left: 0px;
+        background:  #FFF;
+
+        &::before{
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #033495;
+        border-radius: 10px 10px 0 0;
+       
+  }
      
-       }    
+       }   
        
        @media ${breakpoints.md} {
            
@@ -329,13 +338,7 @@ export const Card = styled.div`
         background: #033495;
         border-radius: 20px 20px 0 0;
        
-  }
-        @media ${breakpoints.sm} {
-            top: 0;
-            left: 0;
-            width: 100%;      
-          } 
-          
+  }  
           @media ${breakpoints.md} {
             top: 0;
             left: 0;
@@ -364,9 +367,9 @@ export const Card = styled.div`
           @media ${breakpoints.md} {
             margin: 30px auto 0;  
             height: 70px;
-            width: 70px;  
+            width: 70px;
+       }
           } 
-        }
 
         h3{
             text-align: center;
@@ -429,7 +432,7 @@ export const Card = styled.div`
 
     @media ${breakpoints.sm} {
     
-    margin: 10px auto;
+    margin-top: 20px;
     display: block;
     padding: 5px 5px;
     border: none;
