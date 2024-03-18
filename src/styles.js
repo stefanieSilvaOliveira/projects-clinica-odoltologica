@@ -5,6 +5,12 @@ export const Container = styled.div`
           height: 100vh;
           background-color: #FFF;
           
+          @media ${breakpoints.md} {
+               height: 100%;
+               width: 100%;  
+     }
+         
+
           h2{
             text-align: center;
             margin-top: 20px;
@@ -22,8 +28,9 @@ export const Container = styled.div`
 
           @media ${breakpoints.md} {
                   text-align: center;
-                  margin-left: 50px;
-                  font-size: 30px;    
+                  margin-left: 15px;
+                  font-size: 23px; 
+                  color: #000;   
      }
         
           }
@@ -44,33 +51,34 @@ export const Container = styled.div`
                  margin-top: 10px;
      }
      @media ${breakpoints.md} {
-                margin-left: 100px;
-                font-size: 20px;
-                width: 250px;
- 
-          }
-    
-    }
-
-`;
+                margin-left: 50px;
+                font-size: 18px;
+                width: 300px;
+      }
+      }`; 
 
 export const Header= styled.header`
          display: flex;
          justify-content: space-around;
          align-items: center;
          height: 70px;
-       
+
+         @media ${breakpoints.md} {
+           
+              width: 100%;
+          }
+
+          @media ${breakpoints.md} {
+               display: flex;
+               margin-left: 50px;
+          }
        
          @media ${breakpoints.sm} {
            flex-direction: column;
            justify-content: center;
           }
 
-          @media ${breakpoints.md} {
-            flex-direction: column;  
-          }
-        
-    
+      
         ul{
             list-style: none;
             display: flex;
@@ -80,16 +88,8 @@ export const Header= styled.header`
                  margin-left: -30px;
                  display: flex;
                  justify-content: center;
-          }
-
-          @media ${breakpoints.md} {
-               display: flex;
-               margin-left: 50px;
-          }
-        
+          }   
            
-        }   
-        
         li{
              margin: 10px 50px 10px 50px; 
              display: flex;  
@@ -105,16 +105,15 @@ export const Header= styled.header`
 
           @media ${breakpoints.md} {
           
-          margin: 20px 30px 10px 20px;
-          font-size: 20px;
+          margin: 20px 20px 10px 20px;
+          font-size: 15px;
           
           }
          &:active{
          transform: scale(0.95); 
           opacity: 0.5;
        }
-
-       }`;
+       } }`;     
 
 export const ContainerItens = styled.div`
           width: 100%;
@@ -134,6 +133,7 @@ export const ContainerItens = styled.div`
           @media ${breakpoints.md} {
                  width: 150%;
                  height: 400px;
+                 background: #033495;
     
           }
           
@@ -160,6 +160,9 @@ export const ContainerItens = styled.div`
           @media ${breakpoints.md} {
                  margin-top: 50px;
                  margin-left: 90px;
+                 background: #C5D4EB;
+                 color: #000;
+                 font-weight: 600;
  
           }
         
@@ -191,15 +194,12 @@ export const H1 = styled.h1`
           
 
           @media ${breakpoints.md}{
-                 font-size: 35px;
+                 font-size: 30px;
+                 color: #fff;
                  margin-top: 120px;
                  margin-left: -150px;   
-          }
-                     
-
-          
+          }         
 `;
-
 
 export const Logo = styled.image`
     img{
@@ -213,8 +213,10 @@ export const Logo = styled.image`
    }        
    
    @media ${breakpoints.md} {
-          display: none;
-          
+             display: flex;   
+             position: absolute;
+             margin-top: -40px;
+             margin-left: 30px;
           }
 `;
 
@@ -248,9 +250,6 @@ export const Button = styled.button`
           @media ${breakpoints.md} {
                   display: none; 
           }
-        
-       
-
 `;
 
 export const Image = styled.img`
@@ -263,10 +262,7 @@ export const Image = styled.img`
 
           @media ${breakpoints.md} {
            display: none;
-          
-          }
-        
-                
+           }                       
 `;
 
 export const CardContainer = styled.div`
@@ -292,7 +288,6 @@ export const CardContainer = styled.div`
            grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
            gap: 30px;
            margin-top: 50px;
-
           }
 `;
 
@@ -300,8 +295,8 @@ export const Card = styled.div`
        
        background-color: #F9F9F9;
        border-radius: 25px;
-       width: 310px;
-       height: 320px;
+       width: 300px;
+       height: 310px;
 
        @media ${breakpoints.sm} {
            
