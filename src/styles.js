@@ -63,7 +63,7 @@ export const Header= styled.header`
          justify-content: space-around;
          align-items: center;
          height: 70px;
-
+        
          @media ${breakpoints.md} {
            
                width: 100%;
@@ -73,12 +73,6 @@ export const Header= styled.header`
                display: flex;
                margin-left: 50px;
           }
-       
-         @media ${breakpoints.sm} {
-           flex-direction: column;
-           justify-content: center;
-          }
-
       
         ul{
             list-style: none;
@@ -88,7 +82,7 @@ export const Header= styled.header`
             @media ${breakpoints.sm} {
                  margin-left: -30px;
                  display: flex;
-                 justify-content: center;
+                 justify-content: center;      
           }   
            
         li{
@@ -101,7 +95,8 @@ export const Header= styled.header`
 
              @media ${breakpoints.sm} {
             margin: 20px 20px 10px 20px;
-            font-size: 13px;
+            font-size: 10px;
+           
           }
 
           @media ${breakpoints.md} {
@@ -152,10 +147,12 @@ export const ContainerItens = styled.div`
             border-radius: 20px;
 
             @media ${breakpoints.sm} {
-         
-                margin-right: 50px;
-        
+              margin-right: 50px;
+              
           }
+         
+               
+              
 
           @media ${breakpoints.md} {
                  margin-top: 30px;
@@ -163,7 +160,6 @@ export const ContainerItens = styled.div`
                  background: #C5D4EB;
                  color: #000;
                  font-weight: 600;
- 
           }
         
         
@@ -188,11 +184,11 @@ export const H1 = styled.h1`
 
        @media ${breakpoints.sm} {
               font-size: 15px;
-              width: 400px;
-              height: 500px;       
+              width: 300px;
+              height: 300px;
+                
       }
-          
-
+        
           @media ${breakpoints.md}{
                  font-size: 30px;
                  color: #fff;
@@ -208,10 +204,7 @@ export const Logo = styled.image`
         position: relative;
     }
 
-    @media ${breakpoints.sm} {
-        display: none;
-   }        
-   
+  
    @media ${breakpoints.md} {
              display: flex;   
              position: absolute;
@@ -277,19 +270,19 @@ export const CardContainer = styled.div`
   @media ${breakpoints.sm} {
            
     margin-left: 0;
-    grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
-    gap: 10px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
     margin-top: 20px;        
 }
 
 @media ${breakpoints.md} {
             
-           margin-left: 0px;
-           grid-template-columns: repeat(2, minmax(0, 1fr));
-           gap: 30px;
-           margin-top: 50px;
-           margin-left: 100px;
-          }
+   margin-left: 0px;
+   grid-template-columns: repeat(2, minmax(0, 1fr));
+   gap: 30px;
+   margin-top: 50px;
+   margin-left: 100px;
+  }
 `;
 
 export const Card = styled.div`
@@ -309,13 +302,13 @@ export const Card = styled.div`
       } 
 
        @media ${breakpoints.sm} {
-           
-        position: relative;
-        background-color: #f9f9f9;
-        border-radius: 25px;
-        width: 60%;
-        height: 300px;  
-        margin-left: 60px;   
+        
+        width: 70%;
+        height: auto;
+        margin-left: -50px;
+        margin-right: auto;
+        background:  #F9F9F9;
+     
        }    
        
        @media ${breakpoints.md} {
@@ -381,9 +374,9 @@ export const Card = styled.div`
             font-weight: 500; 
             font-size: 18px;   
 
-            @media ${breakpoints.sm} {
+          @media ${breakpoints.sm} {
             
-          font-size: 18px;
+          font-size: 14px;
           }  
           
           @media ${breakpoints.md} {
@@ -414,9 +407,7 @@ export const Card = styled.div`
             width: 130px;
             font-size: 12px;
 
-          }     
-          
-         
+          }          
     }
 
     button{
