@@ -4,13 +4,14 @@ import breakpoints from './breakpoints';
 export const Container = styled.div`
           height: 100vh;
           background-color: #FFF;
+         
           
           @media ${breakpoints.md} {
                height: 100%;
                width: 100%;  
+               overflow-x: hidden;
      }
-         
-
+        
           h2{
             text-align: center;
             margin-top: 20px;
@@ -65,7 +66,7 @@ export const Header= styled.header`
 
          @media ${breakpoints.md} {
            
-              width: 100%;
+               width: 100%;
           }
 
           @media ${breakpoints.md} {
@@ -131,10 +132,9 @@ export const ContainerItens = styled.div`
           }
          
           @media ${breakpoints.md} {
-                 width: 150%;
-                 height: 400px;
+                 width: 100%;
+                 height: 344px;
                  background: #033495;
-    
           }
           
           button{
@@ -158,7 +158,7 @@ export const ContainerItens = styled.div`
           }
 
           @media ${breakpoints.md} {
-                 margin-top: 50px;
+                 margin-top: 30px;
                  margin-left: 90px;
                  background: #C5D4EB;
                  color: #000;
@@ -197,7 +197,7 @@ export const H1 = styled.h1`
                  font-size: 30px;
                  color: #fff;
                  margin-top: 120px;
-                 margin-left: -150px;   
+                 margin-left: 20px;   
           }         
 `;
 
@@ -285,9 +285,10 @@ export const CardContainer = styled.div`
 @media ${breakpoints.md} {
             
            margin-left: 0px;
-           grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
+           grid-template-columns: repeat(2, minmax(0, 1fr));
            gap: 30px;
            margin-top: 50px;
+           margin-left: 100px;
           }
 `;
 
@@ -298,6 +299,15 @@ export const Card = styled.div`
        width: 300px;
        height: 310px;
 
+       &::before{
+        content: "";
+        position: absolute;
+        height: 150px;
+        width: 312px;
+        background: #033495;
+        border-radius: 20px 20px 0 0;
+      } 
+
        @media ${breakpoints.sm} {
            
         position: relative;
@@ -307,26 +317,26 @@ export const Card = styled.div`
         height: 300px;  
         margin-left: 60px;   
        }    
-
+       
        @media ${breakpoints.md} {
            
-        position: relative;
-        background-color: #f9f9f9;
-        border-radius: 25px;
-        width: 100%;
-        height: 300px;  
-        margin-left: 10px;  
-       }
-  
+        width: 70%;
+        height: auto;
+        margin-left: -50px;
+        margin-right: auto;
+     
+          }    
 
-       &::before{
+       @media ${breakpoints.md} {
+        &::before{
         content: "";
         position: absolute;
-        height: 150px;
-        width: 312px;
+        width: 130px;
+        height: 50px;
         background: #033495;
         border-radius: 20px 20px 0 0;
-
+       
+  }
         @media ${breakpoints.sm} {
             top: 0;
             left: 0;
@@ -359,7 +369,9 @@ export const Card = styled.div`
           }     
           
           @media ${breakpoints.md} {
-            margin: 30px auto 0;    
+            margin: 30px auto 0;  
+            height: 70px;
+            width: 70px;  
           } 
         }
 
@@ -372,8 +384,13 @@ export const Card = styled.div`
             @media ${breakpoints.sm} {
             
           font-size: 18px;
-          }         
-  
+          }  
+          
+          @media ${breakpoints.md} {
+           font-size: 15px;
+
+          }     
+        
         }
 
     
@@ -394,7 +411,7 @@ export const Card = styled.div`
           
         @media ${breakpoints.md} {
             margin-left: 10px;
-            width: 200px;
+            width: 100px;
             font-size: 12px;
 
           }     
@@ -436,15 +453,15 @@ export const Card = styled.div`
     
     @media ${breakpoints.md} {
       margin: 10px auto;
-    display: block;
-    padding: 5px 5px;
-    border: none;
-    border-radius: 6px;
-    font-weight: 400;
-    font-size: 14px;
-    color: #fff;
-    cursor: pointer;
-    background: #004E98;
+      display: block;
+      padding: 3px 4px;
+      border: none;
+      border-radius: 6px;
+      font-weight: 400;
+      font-size: 13px;
+      color: #fff;
+      cursor: pointer;
+      background: #004E98;
 
           }     
 
